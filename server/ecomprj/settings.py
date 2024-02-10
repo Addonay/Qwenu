@@ -31,6 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "oauth",
+    "cart",
+    "orders",
+    "products",
+    "category",
+    "reviews",
+    "jazzmin",
+    "rest_framework",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,3 +129,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Jazzmin settings
+JAZZMIN_SETTINGS ={
+    "site_title" : "Qwetu Admin",
+    "site_header": "Qwetu",
+    "site_brand": "Qwetu",
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+}
